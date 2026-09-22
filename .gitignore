@@ -1,0 +1,4 @@
+node_modules
+.env
+PROJECT_SCOPE.md
+package-lock.json
