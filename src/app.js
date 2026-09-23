@@ -13,13 +13,6 @@ app.get("/", (req, res) => {
   res.status(200).json({ message: "Server is running" });
 });
 
-/**
- * @route POST /api/auth/register
- * @desc Register a new user
- * @access Public
- * @body {username, email, password}
- * @returns {user: {_id, username, email, verified}} 
-*/
 app.use("/api/auth", authRouter);
 
 app.use((req, res) => {
